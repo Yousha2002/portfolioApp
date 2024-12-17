@@ -1,5 +1,5 @@
 "use client";
-import Coumter from "@/components/coumter";
+import Counter from "@/components/Counter";
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
 import Stats from "@/components/Stats";
@@ -23,7 +23,7 @@ const page = () => {
               Hello I'm <br />
               <span className="text-accent">Yousha Shakeel</span>
             </h1>
-            <Coumter />
+            <Counter />
             <p className="max-w-[650px] text-justify mb-9 text-white/80">
               I am a passionate and self-driven Software Engineer with expertise
               in Frontend development or Backend development and a keen eye for

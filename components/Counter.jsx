@@ -13,7 +13,6 @@ const expertiseList = [
   "ExpressJS",
   "MongoDB",
 ];
-
 const Counter = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -24,16 +23,17 @@ const Counter = () => {
 
     return () => clearInterval(interval); // Cleanup on component unmount
   }, []);
-
   return (
-    <div>
-      <h2 className="text-xl">
-        Expertise:{" "}
-        <span className="text-xl text-accent">
-          {expertiseList[currentIndex]}
-        </span>
-      </h2>
-    </div>
+    <>
+      <div>
+        <h2 className="text-xl">
+          Expertise:{" "}
+          <span className="text-xl text-accent">
+            {expertiseList[currentIndex]}
+          </span>
+        </h2>
+      </div>
+    </>
   );
 };
 
